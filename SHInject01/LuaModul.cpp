@@ -12,7 +12,7 @@ void Lua::Pushstring(lua_State *L, const char *s) {
 }
 void Lua::RegisterFunc(unsigned int FreeFuncAddress, int callback, const char* command) {
 	lua_State *state = Lua::GetState();
-	unsigned char * pCodeCave = (unsigned char *)FreeFuncAddress; // replace before use
+	unsigned char * pCodeCave = (unsigned char *)FreeFuncAddress;
 
 	DWORD old;
 	VirtualProtect((LPVOID)pCodeCave, 5, PAGE_EXECUTE_READWRITE, &old);
