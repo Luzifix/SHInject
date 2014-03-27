@@ -1,5 +1,5 @@
-typedef void		(*Lua_Dostring)(char const* luastring, ...); 
-typedef void		(*Lua_Reload)(...); 
+typedef void		(*Lua_Dostring)(char const* luastring); 
+typedef void		(*Lua_Reload)(); 
 typedef void		(*Lua_Setfield)(lua_State *L, int idx, const char* k); 
 typedef void		(*Lua_Pushcclosure)(lua_State *L, lua_CFunction fn, int n); 
 typedef int			(*Lua_Gettop)(lua_State *L);
@@ -22,5 +22,5 @@ public:
 	static	const char*			ToString(lua_State *L, int idx) {Lua_Tostring tostring=(Lua_Tostring)LuaTostringAddr; return tostring(L, idx);}
 	static	void				Pushstring(lua_State *L, const char *s);
 	static	void				RegisterFunc(unsigned int FreeFuncAddress, int callback, const char* command);
-	static	void				UnRegisterFunc(const char* command){LuaUnregisterfunc unregister=(LuaUnregisterfunc)LuaUnregisterfuncAddr; unregister(command);};
+	static	void				UnRegisterFunc(const char* command){ LuaUnregisterfunc unregister = (LuaUnregisterfunc)FrameScriptUnregisterFunctionAddr; unregister(command); };
 };

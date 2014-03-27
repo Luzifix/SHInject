@@ -1,7 +1,7 @@
-#include "header.h"
+#include "Header.h"
 
-void (*Lua::DoString)(char const* luastring, ...) = reinterpret_cast<Lua_Dostring>(LuaDostringAddr);
-void (*Lua::Reload)(...) = reinterpret_cast<Lua_Reload>(LuaReloadAddr);
+void (*Lua::DoString)(char const* luastring) = reinterpret_cast<Lua_Dostring>(LuaDostringAddr);
+void (*Lua::Reload)() = reinterpret_cast<Lua_Reload>(LuaReloadAddr);
 void (*Lua::Setfield)(lua_State *L, int idx, const char* k) = reinterpret_cast<Lua_Setfield>(LuaSetfieldAddr);
 void (*Lua::Pushcclosure)(lua_State *L, lua_CFunction fn, int n) = reinterpret_cast<Lua_Pushcclosure>(LuaPushcclosureAddr);
 

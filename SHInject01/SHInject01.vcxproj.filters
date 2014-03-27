@@ -111,7 +111,13 @@
     <ClCompile Include="LuaModul.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="WowModul.cpp">
+    <ClCompile Include="Console.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="EventMgr.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="DetoursMgr.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
@@ -191,10 +197,19 @@
     <ClInclude Include="Offsets.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="header.h">
+    <ClInclude Include="Header.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="WowModul.h">
+    <ClInclude Include="Console.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Detours.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="EventMgr.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="DetoursMgr.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

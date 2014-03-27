@@ -1,4 +1,9 @@
 #include <windows.h>
+#include <string>
+#include <map>
+#include <vector>
+#include "Detours.h"
+
 
 extern "C" {
 #include "lua/src/lua.h"
@@ -9,3 +14,6 @@ extern "C" {
 #include "Offsets.h"
 #include "LuaModul.h"
 #include "WowModul.h"
+#include "Console.h"
+#include "EventMgr.h"
+#include "DetoursMgr.h"
