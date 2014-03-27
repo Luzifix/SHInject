@@ -13,7 +13,6 @@ extern "C" {
 
 #include "Offsets.h"
 #include "LuaModul.h"
-#include "WowModul.h"
 #include "Console.h"
 #include "EventMgr.h"
 #include "DetoursMgr.h"
