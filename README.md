@@ -26,12 +26,13 @@ SHInject is a Memory Editing Library for World of Warcraft 3.3.5:12340. I want t
 * CGGameObjectInitialize
 
 ## How to use
-* Cretae the dll file with Visual Studio
-* Move the dll in the World of Warcraft main directory
-* Inject the dll with a dll injection program
+* Download source
+* Compile the source with Visual Studio
+* Move the SHInject01.dll in the World of Warcraft main directory
+* Inject the dll with a dll Injector in the World of Warcraft process.
 
 ## Thanks
-* Cromon for a lot of help
+* Cromon for a lot of help <3
 * Nesox for http://tinyurl.com/p7eduq9
 * tomrus88 for http://tinyurl.com/pbr6sbg
 
