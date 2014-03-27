@@ -26,7 +26,9 @@ SHInject is a Memory Editing Library for World of Warcraft 3.3.5:12340. I want t
 * CGGameObjectInitialize
 
 ## Thanks
-* Cromon
+* Cromon for a lot of help <3
+* Nesox for http://tinyurl.com/p7eduq9
+* tomrus88 for http://tinyurl.com/pbr6sbg
 
 ## Team
 * Luzifix
