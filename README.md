@@ -2,10 +2,15 @@
 SHInject is a Memory Editing Library for World of Warcraft 3.3.5:12340. I want to make with my library the Memory Editing for World of Warcraft simpler.
 
 ## Functions
-#### GameConsole
-* GameConsole::RegisterCommand("CommandName", myFunction, category, "HelpText");
-* GameConsole::UnregisterCommand("CommandName");
-* GameConsole::Write("MyText", color);
+
+#### Client Communication
+* ClientCommunication::SetMessageHandler(opcode, myFunction, Parameter);
+* ClientCommunication::RemoveMessageHandler(opcode);
+* ClientCommunication::Disconnect();
+* ClientCommunication::GetCurrent();
+* ClientCommunication::GetSessionKey();
+* ClientCommunication::SendPacket(data);
+* ClientCommunication::SendGamePacket(data);
 
 #### Lua
 * Lua::DoString("LuaString");
@@ -18,8 +23,17 @@ SHInject is a Memory Editing Library for World of Warcraft 3.3.5:12340. I want t
 * Lua::RegisterFunc(FreeFuncAddress, (int)myFunction, "CommandName");
 * Lua::UnregisterFunc("CommandName");
 
+#### GameConsole
+* GameConsole::RegisterCommand("CommandName", myFunction, category, "HelpText");
+* GameConsole::UnregisterCommand("CommandName");
+* GameConsole::Write("MyText", color);
+
 ## Events
-* ClientInitializeGame
+* ClientServiceSetMessageHandler
+* ClientServiceRemoveMessageHandler
+* ClientServiceSendGamePacket
+* ClientServiceDisconnect
+* ClientServiceSetMessageHandler
 * FrameScriptRegisterFunction
 * FrameScriptUnregisterFunction
 * SetMessageHandler
