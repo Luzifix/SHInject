@@ -11,9 +11,13 @@ extern "C" {
 #include "lua/src/lauxlib.h"
 }
 
+#include "Opcodes.h"
 #include "Offsets.h"
-#include "LuaModul.h"
-#include "WowModul.h"
-#include "Console.h"
-#include "EventMgr.h"
+
+#include "CDataStoreMgr.h"
 #include "DetoursMgr.h"
+
+#include "LuaModul.h"
+#include "ConsoleModul.h"
+#include "ClientCommunicationModul.h"
+#include "ClientEventModul.h"

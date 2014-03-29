@@ -16,6 +16,18 @@
     <Filter Include="lua">
       <UniqueIdentifier>{a944292f-216e-4587-b7ea-8a7de448b674}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Quelldateien\Modul">
+      <UniqueIdentifier>{2ea37f39-1d1b-4ca7-b5de-9529efa74d2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Manager">
+      <UniqueIdentifier>{1caa8de9-f2c8-4b98-817a-551a9c9a4560}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Modul">
+      <UniqueIdentifier>{00c71207-c9e9-4500-bc0e-009a89e7168e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Manager">
+      <UniqueIdentifier>{4214ea96-6662-4a72-91e9-47cec8836fd6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -109,16 +121,22 @@
       <Filter>lua</Filter>
     </ClCompile>
     <ClCompile Include="LuaModul.cpp">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\Modul</Filter>
     </ClCompile>
-    <ClCompile Include="Console.cpp">
-      <Filter>Quelldateien</Filter>
+    <ClCompile Include="ClientEventModul.cpp">
+      <Filter>Quelldateien\Modul</Filter>
     </ClCompile>
-    <ClCompile Include="EventMgr.cpp">
-      <Filter>Quelldateien</Filter>
+    <ClCompile Include="ConsoleModul.cpp">
+      <Filter>Quelldateien\Modul</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientCommunicationModul.cpp">
+      <Filter>Quelldateien\Modul</Filter>
     </ClCompile>
     <ClCompile Include="DetoursMgr.cpp">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="CDataStoreMgr.cpp">
+      <Filter>Quelldateien\Manager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -191,25 +209,34 @@
     <ClInclude Include="lua\src\lzio.h">
       <Filter>lua</Filter>
     </ClInclude>
+    <ClInclude Include="ClientCommunicationModul.h">
+      <Filter>Headerdateien\Modul</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleModul.h">
+      <Filter>Headerdateien\Modul</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientEventModul.h">
+      <Filter>Headerdateien\Modul</Filter>
+    </ClInclude>
+    <ClInclude Include="DetoursMgr.h">
+      <Filter>Headerdateien\Manager</Filter>
+    </ClInclude>
     <ClInclude Include="LuaModul.h">
+      <Filter>Headerdateien\Modul</Filter>
+    </ClInclude>
+    <ClInclude Include="CDataStoreMgr.h">
+      <Filter>Headerdateien\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Header.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcodes.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="Offsets.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="Header.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="Console.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
     <ClInclude Include="Detours.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="EventMgr.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="DetoursMgr.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

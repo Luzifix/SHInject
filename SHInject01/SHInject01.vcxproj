@@ -76,9 +76,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Console.cpp" />
+    <ClCompile Include="CDataStoreMgr.cpp" />
+    <ClCompile Include="ClientCommunicationModul.cpp" />
+    <ClCompile Include="ConsoleModul.cpp" />
     <ClCompile Include="DetoursMgr.cpp" />
-    <ClCompile Include="EventMgr.cpp" />
+    <ClCompile Include="ClientEventModul.cpp" />
     <ClCompile Include="LuaModul.cpp" />
     <ClCompile Include="lua\src\lapi.c" />
     <ClCompile Include="lua\src\lauxlib.c" />
@@ -112,10 +114,12 @@
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Console.h" />
+    <ClInclude Include="CDataStoreMgr.h" />
+    <ClInclude Include="ClientCommunicationModul.h" />
+    <ClInclude Include="ConsoleModul.h" />
     <ClInclude Include="Detours.h" />
     <ClInclude Include="DetoursMgr.h" />
-    <ClInclude Include="EventMgr.h" />
+    <ClInclude Include="ClientEventModul.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="LuaModul.h" />
     <ClInclude Include="lua\src\lapi.h" />
@@ -142,6 +146,7 @@
     <ClInclude Include="lua\src\lvm.h" />
     <ClInclude Include="lua\src\lzio.h" />
     <ClInclude Include="Offsets.h" />
+    <ClInclude Include="Opcodes.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
