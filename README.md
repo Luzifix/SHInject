@@ -24,6 +24,7 @@ SHInject is a Memory Editing Library for World of Warcraft 3.3.5:12340. I want t
 * Lua::UnregisterFunc("CommandName");
 
 #### GameConsole
+* GameConsole::Enable(true/false);
 * GameConsole::RegisterCommand("CommandName", myFunction, category, "HelpText");
 * GameConsole::UnregisterCommand("CommandName");
 * GameConsole::Write("MyText", color);
