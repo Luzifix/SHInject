@@ -18,6 +18,12 @@ extern "C" {
 #include "DetoursMgr.h"
 
 #include "LuaModul.h"
+<<<<<<< HEAD
 #include "ConsoleModul.h"
 #include "ClientCommunicationModul.h"
 #include "ClientEventModul.h"
+=======
+#include "Console.h"
+#include "EventMgr.h"
+#include "DetoursMgr.h"
+>>>>>>> 4acfba781e1e9f21688bf9e166bf843af457917c
