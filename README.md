@@ -47,7 +47,7 @@ SHInject is a Memory Editing Library for World of Warcraft 3.3.5:12340. I want t
 * Inject the dll with a dll Injector in the World of Warcraft process.
 
 ## License
-![logo](http://creativecommons.org/wp-content/themes/creativecommons.org/images/chooser_by_hover.png) ![logo](http://creativecommons.org/wp-content/themes/creativecommons.org/images/chooser_cc_hover.png) ![logo](http://creativecommons.org/wp-content/themes/creativecommons.org/images/chooser_nc_hover.png)
+![img](http://creativecommons.org/wp-content/themes/creativecommons.org/images/chooser_by_hover.png) ![img](http://creativecommons.org/wp-content/themes/creativecommons.org/images/chooser_cc_hover.png) ![img](http://creativecommons.org/wp-content/themes/creativecommons.org/images/chooser_nc_hover.png)
 
 http://creativecommons.org/licenses/by-nc/4.0/
 ## Thanks
